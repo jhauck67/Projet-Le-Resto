@@ -1,0 +1,46 @@
+header {
+  height: 100dvh;
+  background: url(../img/header-background-large.webp) center/cover;
+  @media screen and (max-width: 920px) {
+    background: url(../img/header-background-medium.webp) center/cover;
+  }
+  @media screen and (max-width: 480px) {
+    background: url(../img/header-background-small.webp) center/cover;
+  }
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  .title {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    @include centerChild;
+    .text-container {
+      transform: translateY(-80px);
+      text-align: center;
+      .cursive {
+        font-weight: normal;
+        transform: translateY(
+          clamp(20px, calc(1.25rem + ((1vw - 3.2px) * 1.1364)), 30px)
+        );
+      }
+      img {
+        width: 32px;
+        height: auto;
+        margin: 50px 0;
+      }
+      .subtitle {
+        font-family: $light;
+        color: $white;
+        text-shadow: 1px 2px 3px #000000;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
+    }
+  }
+  // Police responsive
+  h1,
+  .cursive {
+    font-size: clamp(2rem, calc(2rem + ((1vw - 0.2rem) * 1.8182)), 3rem);
+    min-height: 0vw;
+  }
+}

@@ -21,13 +21,14 @@
 
 /* --------------------------- Variables et mixins -------------------------- */
 //1 Variables
-$logo: "Allura", cursive;
+$cursive: "Allura", cursive;
 $light: "Roboto", sans-serif;
 $medium: "Poppins", sans-serif;
 $white: #eeeeee;
 $black: #000000;
 $gold: #a67245;
 $grey1: #21201e;
+$grey2: #a9a69e;
 
 //1 Mixins
 @mixin centerChild {
@@ -45,8 +46,8 @@ $grey1: #21201e;
 body {
   width: 100dvw;
   min-height: 100dvh;
-  background: red;
-  overflow: hidden;
+  background: $grey1;
+  overflow-x: hidden;
 }
 li {
   list-style: none;
@@ -56,7 +57,38 @@ a:visited {
   color: $black;
   text-decoration: none;
 }
+.cursive {
+  font-family: $cursive;
+  color: $gold;
+  font-weight: bold;
+  transform: translateY(10px);
+}
+h1 {
+  font-family: $medium;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 1px 2px 3px #000000;
+}
+h2 {
+  font-family: $medium;
+  text-transform: uppercase;
+}
+p {
+  font-family: $light;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                      Réglages size : fluid responsive                      */
 /* -------------------------------------------------------------------------- */
+.subtitle,
+p {
+  font-size: clamp(0.7rem, calc(0.7rem + ((1vw - 0.2rem) * 0.5455)), 1rem);
+}
+.cursive {
+  font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.2rem) * 0.5455)), 1.8rem);
+}
+h2 {
+  font-size: clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 0.3636)), 1.2rem);
+  min-height: 0vw;
+}
