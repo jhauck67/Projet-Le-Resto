@@ -4,16 +4,30 @@
 
 /* ---------------------------- Import des fonts ---------------------------- */
 @font-face {
-  font-family: "Nom-police";
-  src: url(../chemin/vers/la/font.ttf);
+  font-family: "Allura";
+  src: url(../fonts/Allura-Regular.ttf);
+  font-display: swap; //Pour éviter les décalages de mise en page
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+  font-display: swap; //Pour éviter les décalages de mise en page
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
   font-display: swap; //Pour éviter les décalages de mise en page
 }
 
 /* --------------------------- Variables et mixins -------------------------- */
 //1 Variables
-$font: "Nom-police", serif;
-$white: white;
-$black: black;
+$logo: "Allura", cursive;
+$light: "Roboto", sans-serif;
+$medium: "Poppins", sans-serif;
+$white: #eeeeee;
+$black: #000000;
+$gold: #a67245;
+$grey1: #21201e;
 
 //1 Mixins
 @mixin centerChild {
