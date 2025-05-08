@@ -308,6 +308,11 @@ section#menu .menu .menu-top {
   margin: 40px auto 120px;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  section#menu .menu .menu-top {
+    width: 95%;
+  }
+}
 section#menu .menu .menu-top .icon {
   margin: 25px 0;
 }
@@ -323,7 +328,17 @@ section#menu .menu .menu-top ul {
           justify-content: center;
 }
 section#menu .menu .menu-top ul li {
+  z-index: 10000;
   padding: 0 30px;
+}
+@media screen and (max-width: 500px) {
+  section#menu .menu .menu-top ul li {
+    padding: 0 10px;
+  }
+  section#menu .menu .menu-top ul li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 section#menu .menu .menu-top ul li a {
   color: #eeeeee;
@@ -340,22 +355,91 @@ section#menu .menu .menu-top ul li a::after {
   top: 30px;
   left: 0;
 }
+@media screen and (max-width: 500px) {
+  section#menu .menu .menu-top ul li a::after {
+    top: 20px;
+  }
+}
+section#menu .menu .menu-bottom {
+  background: url(../img/section2-background-large.webp) center/cover;
+}
+@media screen and (max-width: 960px) {
+  section#menu .menu .menu-bottom {
+    background: url(../img/section2-background-medium.webp) center/cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  section#menu .menu .menu-bottom {
+    background: url(../img/section2-background-small.webp) center/cover;
+  }
+}
 section#menu .menu .menu-bottom .menu-container {
   width: 60%;
   margin: 0 auto;
-  padding: 45px 25px;
+  padding: 40px 25px 10px;
   background: #eeeeee;
   -webkit-box-shadow: 0px -4px 0 #a67245;
           box-shadow: 0px -4px 0 #a67245;
+  -webkit-transform: translateY(-75px);
+          transform: translateY(-75px);
+}
+@media screen and (max-width: 850px) {
+  section#menu .menu .menu-bottom .menu-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  section#menu .menu .menu-bottom .menu-container {
+    width: 100%;
+  }
 }
 section#menu .menu .menu-bottom .menu-container ul {
+  width: 100%;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
+}
+@media screen and (max-width: 600px) {
+  section#menu .menu .menu-bottom .menu-container ul {
+    grid-template-columns: 1fr;
+  }
 }
 section#menu .menu .menu-bottom .menu-container ul li {
   display: grid;
-  grid-template-columns: 25% 65% 10%;
+  grid-template-columns: 72px 1fr 35px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #a9a69e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section#menu .menu .menu-bottom .menu-container ul li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+section#menu .menu .menu-bottom .menu-container ul li .description .plat {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+section#menu .menu .menu-bottom .menu-container ul li .description .ingredients {
+  font-family: "Roboto", sans-serif;
+}
+section#menu .menu .menu-bottom .menu-container ul li .price {
+  font-family: "Poppins", sans-serif;
+  color: #a67245;
+}
+section#menu .menu .menu-bottom .menu-container ul li .plat,
+section#menu .menu .menu-bottom .menu-container ul li .ingredients,
+section#menu .menu .menu-bottom .menu-container ul li .price {
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 1.1163, 1rem);
+  min-height: 0vw;
+}
+@media screen and (max-width: 600px) {
+  section#menu .menu .menu-bottom .menu-container ul li .plat,
+  section#menu .menu .menu-bottom .menu-container ul li .ingredients,
+  section#menu .menu .menu-bottom .menu-container ul li .price {
+    font-size: clamp(0.7rem, 0.7rem + (1vw - 0.2rem) * 1.7143, 1rem);
+  }
 }/*# sourceMappingURL=index.css.map */
