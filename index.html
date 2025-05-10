@@ -145,6 +145,7 @@
               <a
                 href="https://www.facebook.com/"
                 aria-label="Suivez-nous sur Facebook"
+                target="_blank"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -163,6 +164,7 @@
               <a
                 href="https://x.com/?lang=fr"
                 aria-label="Suivez-nous sur Twitter"
+                target="_blank"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -179,8 +181,9 @@
             </li>
             <li>
               <a
-                href="https://x.com/?lang=fr"
+                href="https://www.instagram.com/"
                 aria-label="Suivez-nous sur Instagram"
+                target="_blank"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -199,6 +202,7 @@
               <a
                 href="https://www.pinterest.com/"
                 aria-label="Suivez-nous sur Pinterest"
+                target="_blank"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -262,10 +266,7 @@
             </p>
           </div>
         </div>
-        <div
-          class="img-container"
-          aria-label="image d'un chef réalisant la décoration d'un plat"
-        ></div>
+        <div class="img-container"></div>
       </section>
       <!-- ----- SECTION : MENU ----- -->
       <section id="menu">
@@ -275,6 +276,8 @@
             src="./assets/img/sections-icon.webp"
             alt="icone représentant des couverts"
             class="icon"
+            width="24"
+            height="24"
           />
           <ul>
             <li><a href="#menu">Petit déjeuner</a></li>
@@ -432,8 +435,12 @@
                 width="24"
                 height="24"
               />
-              <form action="">
-                <select name="number" id="number">
+              <form>
+                <select
+                  name="number"
+                  id="number"
+                  aria-label="Pour combien de personnes?"
+                >
                   <option value="">Personne(s)</option>
                   <option value="un">1</option>
                   <option value="deux">2</option>
@@ -442,15 +449,38 @@
                   <option value="cinq">5</option>
                   <option value="six">6</option>
                 </select>
-                <input type="date" name="date" id="date" />
-                <input type="time" name="time" id="time" />
-                <input type="text" name="name" id="name" placeholder="Nom" />
-                <input type="tel" name="tel" id="tel" placeholder="Téléphone" />
+                <input
+                  type="date"
+                  name="date"
+                  id="date"
+                  aria-label="A quelle date?"
+                />
+                <input
+                  type="time"
+                  name="time"
+                  id="time"
+                  aria-label="A quelle heure?"
+                />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nom"
+                  autocomplete="name"
+                />
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="Téléphone"
+                  autocomplete="tel"
+                />
                 <input
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Email"
+                  autocomplete="email"
                 />
               </form>
               <input type="submit" id="submit" value="Réservez" />
@@ -588,7 +618,7 @@
       </section>
     </main>
     <!-- ------------------------------- FOOTER -------------------------------- -->
-    <footer>
+    <footer id="contact">
       <div class="footer-top">
         <div class="part1"></div>
         <div class="part2">
@@ -627,12 +657,13 @@
           <div class="right-part">
             <div class="container">
               <div class="newsletter">
-                <label class="title" for="email">Newsletter</label>
+                <label class="title" for="mail">Newsletter</label>
                 <input
                   type="email"
                   name="email"
-                  id="email"
+                  id="mail"
                   placeholder="Entrez votre email"
+                  autocomplete="email"
                 />
               </div>
               <div class="follow">
@@ -642,6 +673,7 @@
                     <a
                       href="https://www.facebook.com/"
                       aria-label="Suivez-nous sur Facebook"
+                      target="_blank"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -660,6 +692,7 @@
                     <a
                       href="https://x.com/?lang=fr"
                       aria-label="Suivez-nous sur Twitter"
+                      target="_blank"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -676,8 +709,9 @@
                   </li>
                   <li>
                     <a
-                      href="https://x.com/?lang=fr"
+                      href="https://www.instagram.com/"
                       aria-label="Suivez-nous sur Instagram"
+                      target="_blank"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -695,6 +729,7 @@
                   <li>
                     <a
                       href="https://www.pinterest.com/"
+                      target="_blank"
                       aria-label="Suivez-nous sur Pinterest"
                     >
                       <svg

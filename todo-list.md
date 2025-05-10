@@ -101,33 +101,33 @@
 
 ## Structure de la page web
 
-- [ ] Réfléchir à la structure sémantique de la page web.
-- [ ] Définir les images les plus importantes (qui s'afficheront en premier) et les images qui sont cachées au chargement de la page. On "preload" les plus importantes, on fait un `loading="lazy"`
+- [x] Réfléchir à la structure sémantique de la page web.
+- [x] Définir les images les plus importantes (qui s'afficheront en premier) et les images qui sont cachées au chargement de la page. On "preload" les plus importantes, on fait un `loading="lazy"`
 
 ## Vérification de la sémantique
 
-- [ ] Vérifier qu'il n'y a pas d'erreurs sémantiques dans le code.
+- [x] Vérifier qu'il n'y a pas d'erreurs sémantiques dans le code.
 
 > On pourra utiliser le site [Markup Validation service](https://validator.w3.org/)
 
 ## Vérification des performances
 
-- [ ] Lancer un Audit Lighthouse
+- [x] Lancer un Audit Lighthouse
 
 ## Mise à jour du Readme.md
 
-- [ ] Remplir les premières parties du Readme
-- [ ] Créer un header Github Readme `assets/sketch/github-header-image.png`
+- [x] Remplir les premières parties du Readme
+- [x] Créer un header Github Readme `assets/sketch/github-header-image.png`
 
 > On utilisera le site [Github Profile Header Générator](https://leviarista.github.io/github-profile-header-generator/)
 
-- [ ] Créer un aperçu du site
-- [ ] Créer une vidéo aperçu `apercu.png`
-- [ ] Convertir la vidéo en GIF `video.gif`
+- [x] Créer un aperçu du site
+- [x] Créer une vidéo aperçu `apercu.png`
+- [x] Convertir la vidéo en GIF `video.gif`
 
 ## Commit & Push sur la manche "Main"
 
-- [ ] Commit et Push les fichiers sur la branche principale "main"
+- [x] Commit et Push les fichiers sur la branche principale "main"
 
 ## Effectuer les tests visuels et de performances multi-plateformes
 

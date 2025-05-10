@@ -26,9 +26,9 @@ $light: "Roboto", sans-serif;
 $medium: "Poppins", sans-serif;
 $white: #eeeeee;
 $black: #000000;
-$gold: #a67245;
+$gold: #8b5f3a;
 $grey1: #21201e;
-$grey2: #a9a69e;
+$grey2: #656463;
 
 //1 Mixins
 @mixin centerChild {
@@ -145,7 +145,7 @@ h3 {
 p,
 a {
   //*Fluid Responsive font-size
-  font-size: clamp(0.7rem, calc(0.7rem + ((1vw - 0.2rem) * 0.5455)), 1rem);
+  font-size: clamp(0.75rem, calc(0.7rem + ((1vw - 0.2rem) * 0.5455)), 1rem);
   min-height: 0vw;
 }
 

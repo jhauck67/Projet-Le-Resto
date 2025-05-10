@@ -10,7 +10,7 @@
 
 # Description
 
-_Description du projet_
+Ce projet est une intégration complète de la maquette d’un site web pour un restaurant haut de gamme. Il a été réalisé dans le cadre de ma formation en développement front-end. L’objectif était de créer une interface responsive et esthétiquement raffinée, fidèle à la maquette fournie.
 
 ## Technologies utilisées :
 
@@ -42,10 +42,9 @@ Le code a été structuré pour être facile à maintenir et à développer.
 ├── assets                  # Dossier pour les images, polices, maquettes, styles
 │   ├── fonts/              # Dossier pour les polices
 │   ├── img/                # Dossier pour les images
-│   ├── scripts/            # Dossier pour les fichiers JS
-│   │   ├── index.js        # Fichier principal SASS
 │   ├── sketch/             # Dossier pour les maquettes
 │   ├── styles/             # Dossier contenant les fichiers CSS et SASS
+│   │   ├── components/     # Dossier pour les styles de composants
 │   │   ├── layouts/        # Dossier pour les styles de mise en page
 │   │   ├── _settings.scss  # Styles de base (typographie, variables)
 │   │   ├── index.css       # Fichier principal CSS généré depuis SASS
@@ -53,7 +52,6 @@ Le code a été structuré pour être facile à maintenir et à développer.
 ├── readme.md               # Documentation du projet
 ├── .gitignore              # Fichier gitignore
 ├── LICENSE                 # Fichier License
-├── .github/                # Dossier pour les workflows et templates d'issues
 ```
 
 # Aperçu
@@ -64,7 +62,7 @@ Voici un aperçu du projet, que tu peux visualiser en ligne sur GitHub Pages :
 ## Lien vers le site en ligne
 
 Tu peux consulter la version en ligne de ce projet via GitHub Pages en cliquant sur le lien suivant :
-[Voir le site sur GitHub Pages]()
+[Voir le site sur GitHub Pages](https://jhauck67.github.io/Projet-Le-Resto/)
 
 # Tests et vérifications
 

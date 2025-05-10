@@ -76,7 +76,10 @@ footer {
   .footer-bottom {
     background: url(../img/footer-background-large.webp) center/cover;
     @media screen and (max-width: 960px) {
-      background: url(../img/footer-background-mediums.webp) center/cover;
+      background: url(../img/footer-background-medium.webp) center/cover;
+    }
+    @media screen and (max-width: 650px) {
+      background: $grey1;
     }
     div {
       @include maxWidth;
@@ -145,7 +148,7 @@ footer {
             align-items: flex-start;
             justify-content: center;
             input {
-              border: 1px solid $grey2;
+              border: 1px solid #ab9e9e;
               border-radius: 5px;
               background: transparent;
               height: 25px;
