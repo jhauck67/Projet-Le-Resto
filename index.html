@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                                  HEAD                                   -->
+  <!-- ----------------------------------------------------------------------- -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ------------- Titre, Meta Description, Favicon et Auteur -------------- -->
 
-    <!--1 Titre de l'onglet (entre 50 et 60 caractères) -->
+    <!-- Titre de l'onglet (entre 50 et 60 caractères) -->
     <title>Le Resto - Restaurant gastronomique & événements exclusifs</title>
 
-    <!-- 1 Meta description -->
+    <!-- Meta Description -->
     <meta
       name="description"
       content="Découvrez Le Resto, un restaurant gastronomique qui sublime les produits frais. Réservez votre table en ligne et vivez des soirées d'exception dans une ambiance raffinée."
     />
 
-    <!-- 1 Les favicons -->
-    <!-- favicon au format ICO -->
+    <!-- Les favicons -->
+    <!-- Favicon au format ICO -->
     <link
       rel="icon"
       type="image/x-icon"
       href="./assets/img/icons/favicon.ico"
     />
-    <!-- favicon au format SVG -->
+    <!-- Favicon au format SVG -->
     <link
       rel="icon"
       type="image/svg+xml"
       href="./assets/img/icons/favicon.svg"
     />
-    <!-- favicon au format PNG -->
+    <!-- Favicon au format PNG -->
     <link
       rel="icon"
       type="image/png"
@@ -41,17 +44,18 @@
       sizes="16x16"
       href="./assets/img/icons/favicon-16x16.png"
     />
-    <!-- icone pour Apple Touch -->
+    <!-- Icone pour Apple Touch -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="./assets/img/icons/apple-touch-icon.png"
     />
 
-    <!-- 1 Auteur -->
+    <!-- Auteur -->
     <meta name="author" content="J3nD€v" />
 
-    <!-- ------------------------- Facebook Meta Tags -------------------------- -->
+    <!-- ------------------------- OpenGraph Meta Tags ------------------------- -->
+
     <!-- Facebook Meta Tags -->
     <meta
       property="og:url"
@@ -97,7 +101,7 @@
     <link rel="stylesheet" href="./assets/styles/index.css" />
     <!-- feuille de style CSS -->
 
-    <!-- --------------------------- Preload des images --------------------------- -->
+    <!-- ------------------------- Preload des images -------------------------- -->
     <!-- permet de précharger les images importantes -->
     <link
       rel="preload"
@@ -119,11 +123,13 @@
     />
   </head>
   <!-- ----------------------------------------------------------------------- -->
-  <!--                             DEBUT DE LA PAGE                            -->
+  <!--                              DEBUT DU SITE                              -->
   <!-- ----------------------------------------------------------------------- -->
   <body>
+    <!-- ------------------------------- HEADER -------------------------------- -->
     <header>
       <div class="header-container">
+        <!-- ----- NAVIGATION ----- -->
         <nav>
           <div id="logo">Resto</div>
           <ul class="navbar">
@@ -209,6 +215,7 @@
             </li>
           </ul>
         </nav>
+        <!-- ----- TITLE ----- -->
         <div class="title-container">
           <h1><span class="cursive">Bienvenue à</span><br />Le Resto</h1>
           <img
@@ -224,7 +231,9 @@
         </div>
       </div>
     </header>
+    <!-- -------------------------------- MAIN --------------------------------- -->
     <main>
+      <!-- ----- SECTION : SHOP ----- -->
       <section id="shop">
         <div class="left-part">
           <div class="text-container">
@@ -258,192 +267,320 @@
           aria-label="image d'un chef réalisant la décoration d'un plat"
         ></div>
       </section>
+      <!-- ----- SECTION : MENU ----- -->
       <section id="menu">
-        <div class="menu">
-          <div class="menu-top">
-            <div class="cursive">Discover</div>
-            <div class="icon">
+        <div class="top-part">
+          <h2 class="cursive">Découvrez</h2>
+          <img
+            src="./assets/img/sections-icon.webp"
+            alt="icone représentant des couverts"
+            class="icon"
+          />
+          <ul>
+            <li><a href="#menu">Petit déjeuner</a></li>
+            <li><a href="#menu">Déjeuner</a></li>
+            <li><a href="#menu">Dîner</a></li>
+            <li><a href="#menu">Boissons</a></li>
+          </ul>
+        </div>
+        <div class="bottom-part">
+          <ul>
+            <li>
+              <img
+                class="img"
+                src="./assets/img/section2-plat1.webp"
+                alt="Photo de Pâtes aux champignons"
+                width="48"
+                height="48"
+              />
+              <div class="description">
+                <p class="plat">Pâtes aux champignons</p>
+                <p class="ingredients">Champignon/Ail/Légumes</p>
+              </div>
+              <p class="price">€12</p>
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./assets/img/section2-plat2.webp"
+                alt="Photo de Patates frites à l'ail"
+                width="48"
+                height="48"
+              />
+              <div class="description">
+                <p class="plat">Patates frites à l'ail</p>
+                <p class="ingredients">Patates/Huile d'olive/Ail</p>
+              </div>
+              <p class="price">€22</p>
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./assets/img/section2-plat3.webp"
+                alt="Photo de Rôti de thon"
+                width="48"
+                height="48"
+              />
+              <div class="description">
+                <p class="plat">Rôti de thon</p>
+                <p class="ingredients">Thon/Patates/Riz</p>
+              </div>
+              <p class="price">€15</p>
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./assets/img/section2-plat4.webp"
+                alt="Photo de Rôti de porc (4 pcs)"
+                width="48"
+                height="48"
+              />
+              <div class="description">
+                <p class="plat">Rôti de porc (4 pcs)</p>
+                <p class="ingredients">Porc/Légumes/Shoyu</p>
+              </div>
+              <p class="price">€18</p>
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./assets/img/section2-plat5.webp"
+                alt="Photo de Poulet frit salé"
+                width="48"
+                height="48"
+              />
+              <div class="description">
+                <p class="plat">Poulet frit salé</p>
+                <p class="ingredients">Poulet/Huile d'olive/Sel</p>
+              </div>
+              <p class="price">€20</p>
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./assets/img/section2-plat6.webp"
+                alt="Photo de Crabe au curry"
+                width="48"
+                height="48"
+              />
+              <div class="description">
+                <p class="plat">Crabe au curry</p>
+                <p class="ingredients">Crabe/Patates/Riz</p>
+              </div>
+              <p class="price">€14</p>
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./assets/img/section2-plat7.webp"
+                alt="Photo de Steak de saumon"
+                width="48"
+                height="48"
+              />
+              <div class="description">
+                <p class="plat">Steak de saumon</p>
+                <p class="ingredients">Saumon/Légumes/Huile</p>
+              </div>
+              <p class="price">€16</p>
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./assets/img/section2-plat8.webp"
+                alt="Photo de Pizza boulangère"
+                width="48"
+                height="48"
+              />
+              <div class="description">
+                <p class="plat">Pizza boulangère</p>
+                <p class="ingredients">Patates/Pain/Fromage</p>
+              </div>
+              <p class="price">€25</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ----- SECTION : RESERVATION ----- -->
+      <section id="reservation">
+        <div class="reservation-container">
+          <div class="left-part">
+            <div class="container">
+              <h3><span class="cursive">Horaires</span><br />d'ouverture</h3>
               <img
                 src="./assets/img/sections-icon.webp"
-                alt="icone représentant des couverts"
+                alt="icone représentanteds couverts"
+                class="icon"
                 width="24"
                 height="24"
               />
+              <p class="gold">lundi - vendredi</p>
+              <p>7:00 - 11:00 (Petit déjeuner)</p>
+              <p>11:00 - 22:00 (Déjeuner/Dîner)</p>
+              <p class="gold">samedi - dimanche</p>
+              <p>8:00 - 13:00 (Brunch)</p>
+              <p>13:00 - 21:00 (Déjeuner/Dîner)</p>
+              <p class="gold">+33 909 792 552</p>
             </div>
-            <ul>
-              <li><a href="#menu">Breakfast</a></li>
-              <li><a href="#menu">Lunch</a></li>
-              <li><a href="#menu">Dinner</a></li>
-              <li><a href="#menu">Drinks</a></li>
-              <li><a href="#menu">Other</a></li>
-            </ul>
           </div>
-          <div class="menu-bottom">
-            <div class="menu-container">
-              <ul>
-                <li>
-                  <div class="img">
-                    <img
-                      src="./assets/img/section2-plat1.webp"
-                      alt="Photo de Italian Source Mushroom"
-                      width="48"
-                      height="48"
-                    />
-                  </div>
-                  <div class="description">
-                    <div class="plat">Italian Source Mushroom</div>
-                    <div class="ingredients">Mushroom / Garlic / Veggies</div>
-                  </div>
-                  <div class="price">$12</div>
-                </li>
-                <li>
-                  <div class="img">
-                    <img
-                      src="./assets/img/section2-plat2.webp"
-                      alt="Photo de Fried Potatoes with Garlic"
-                      width="48"
-                      height="48"
-                    />
-                  </div>
-                  <div class="description">
-                    <div class="plat">Fried Potatoes with Garlic</div>
-                    <div class="ingredients">Potatoes / Olive Oil / Garlic</div>
-                  </div>
-                  <div class="price">$22</div>
-                </li>
-                <li>
-                  <div class="img">
-                    <img
-                      src="./assets/img/section2-plat3.webp"
-                      alt="Photo de Tenu Roast Source"
-                      width="48"
-                      height="48"
-                    />
-                  </div>
-                  <div class="description">
-                    <div class="plat">Tenu Roast Source</div>
-                    <div class="ingredients">Tuna / Potatoes / Rice</div>
-                  </div>
-                  <div class="price">$15</div>
-                </li>
-                <li>
-                  <div class="img">
-                    <img
-                      src="./assets/img/section2-plat4.webp"
-                      alt="Photo de Roast Pork (4 sticks)"
-                      width="48"
-                      height="48"
-                    />
-                  </div>
-                  <div class="description">
-                    <div class="plat">Roast Pork (4 sticks)</div>
-                    <div class="ingredients">Pork / Veggies / Shoyu</div>
-                  </div>
-                  <div class="price">$18</div>
-                </li>
-                <li>
-                  <div class="img">
-                    <img
-                      src="./assets/img/section2-plat5.webp"
-                      alt="Photo de Salted Fried Chicken"
-                      width="48"
-                      height="48"
-                    />
-                  </div>
-                  <div class="description">
-                    <div class="plat">Salted Fried Chicken</div>
-                    <div class="ingredients">Chicken / olive Oil / Salt</div>
-                  </div>
-                  <div class="price">$20</div>
-                </li>
-                <li>
-                  <div class="img">
-                    <img
-                      src="./assets/img/section2-plat6.webp"
-                      alt="Photo de Crab with Curry Sources"
-                      width="48"
-                      height="48"
-                    />
-                  </div>
-                  <div class="description">
-                    <div class="plat">Crab with Curry Sources</div>
-                    <div class="ingredients">Crab / Potatoes / Rice</div>
-                  </div>
-                  <div class="price">$14</div>
-                </li>
-                <li>
-                  <div class="img">
-                    <img
-                      src="./assets/img/section2-plat7.webp"
-                      alt="Photo de Imported Salmon Steak"
-                      width="48"
-                      height="48"
-                    />
-                  </div>
-                  <div class="description">
-                    <div class="plat">Imported Salmon Steak</div>
-                    <div class="ingredients">Salmon / Veggies / Oil</div>
-                  </div>
-                  <div class="price">$16</div>
-                </li>
-                <li>
-                  <div class="img">
-                    <img
-                      src="./assets/img/section2-plat8.webp"
-                      alt="Photo de Baked Potato Pizza"
-                      width="48"
-                      height="48"
-                    />
-                  </div>
-                  <div class="description">
-                    <div class="plat">Baked Potato Pizza</div>
-                    <div class="ingredients">Potatoes / Bread / Cheese</div>
-                  </div>
-                  <div class="price">$25</div>
-                </li>
-              </ul>
+          <div class="right-part">
+            <div class="form-container">
+              <h2><span class="cursive">Réservation</span><br />en ligne</h2>
+              <img
+                src="./assets/img/sections-icon.webp"
+                alt="icone représentant des couverts"
+                class="icon"
+                width="24"
+                height="24"
+              />
+              <form action="">
+                <select name="number" id="number">
+                  <option value="">Personne(s)</option>
+                  <option value="un">1</option>
+                  <option value="deux">2</option>
+                  <option value="trois">3</option>
+                  <option value="quatre">4</option>
+                  <option value="cinq">5</option>
+                  <option value="six">6</option>
+                </select>
+                <input type="date" name="date" id="date" />
+                <input type="time" name="time" id="time" />
+                <input type="text" name="name" id="name" placeholder="Nom" />
+                <input type="tel" name="tel" id="tel" placeholder="Téléphone" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </form>
+              <input type="submit" id="submit" value="Réservez" />
             </div>
           </div>
         </div>
       </section>
-      <section id="reservation">
-        <div class="resa-container">
-          <div class="left-part">
-            <div class="left-part-container">
-              <div class="cursive">Time</div>
-              <h2>Open</h2>
-              <div class="img">
-                <img
-                  src="./assets/img/sections-icon.webp"
-                  alt="icone représentant des couverts"
-                  width="24"
-                  height="24"
-                />
+      <!-- ----- SECTION : BLOG ----- -->
+      <section id="blog">
+        <div class="blog-container">
+          <h2><span class="cursive">A venir</span><br />Nos événements</h2>
+          <img
+            src="./assets/img/sections-icon.webp"
+            alt="icone représentant des couverts"
+            class="icon"
+            width="24"
+            height="24"
+          />
+          <div class="container">
+            <div class="event1 horizon">
+              <div class="img-container">
+                <div class="date-container">
+                  <p><span class="jour">08</span><br />Juin</p>
+                </div>
               </div>
-              <h3>monday - friday</h3>
-              <p>
-                7AM - 11AM (Breakfast) <br />
-                11AM - 10PM (Lunch/Dinner)
-              </p>
-              <h3>saturday - sunday</h3>
-              <p>
-                8AM - 1PM (Brunch) <br />
-                1PM - 9PM (Lunch/Dinner)
-              </p>
-              <h3>+15 890 979 25 52</h3>
+              <div class="article-container">
+                <div class="cont">
+                  <p class="titre">Nuit inspirée</p>
+                  <p class="description">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="16"
+                      width="12"
+                      viewBox="0 0 384 512"
+                    >
+                      <path
+                        fill="inherit"
+                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                      />
+                    </svg>
+                    Le Resto
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="16"
+                      width="16"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="inherit"
+                        d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                      />
+                    </svg>
+                    22:00 - 6:00
+                  </p>
+                  <a href="#">Acheter des tickets</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="right-part">
-            <div class="right-part-container">
-              <div class="cursive">Reservation</div>
-              <h2>Online Booking</h2>
-              <div class="img">
-                <img
-                  src="./assets/img/sections-icon.webp"
-                  alt="icone représentant des couverts"
-                  width="24"
-                  height="24"
-                />
+            <div class="event2 horizon">
+              <div class="img-container">
+                <div class="date-container">
+                  <p><span class="jour">08</span><br />Juin</p>
+                </div>
+              </div>
+              <div class="article-container">
+                <div class="cont">
+                  <p class="titre">DJ RobagRuhme</p>
+                  <p class="description">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="16"
+                      width="12"
+                      viewBox="0 0 384 512"
+                    >
+                      <path
+                        fill="inherit"
+                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                      />
+                    </svg>
+                    Le Resto
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="16"
+                      width="16"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="inherit"
+                        d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                      />
+                    </svg>
+                    22:00 - 6:00
+                  </p>
+                  <a href="#">Acheter des tickets</a>
+                </div>
+              </div>
+            </div>
+            <div class="event3 square">
+              <div class="article-container">
+                <div class="date-container">
+                  <p><span class="jour">08</span><br />Juin</p>
+                </div>
+                <p class="titre">1000 célébrités à la soirée de Johnny</p>
+                <p class="description">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16"
+                    width="12"
+                    viewBox="0 0 384 512"
+                  >
+                    <path
+                      fill="inherit"
+                      d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                    />
+                  </svg>
+                  Le Resto
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16"
+                    width="16"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="inherit"
+                      d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                    />
+                  </svg>
+                  22:00 - 6:00
+                </p>
+                <a href="#">Acheter des tickets</a>
               </div>
             </div>
           </div>

@@ -75,6 +75,12 @@ p {
   padding: 0 15px;
 }
 
+.gold {
+  text-transform: uppercase;
+  color: #a67245;
+  padding: 20px 15px;
+}
+
 /* ------------------------- Réglages de la page web ------------------------ */
 .cursive {
   font-family: "Allura", cursive;
@@ -99,13 +105,26 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 25px;
-  font-size: 1rem;
   font-size: clamp(1.5rem, 1.5rem + (1vw - 0.41875rem) * 1.5094, 2rem);
   min-height: 0vw;
 }
 @media screen and (max-width: 670px) {
   h2 {
     font-size: clamp(1.5rem, 1.5rem + (1vw - 0.2rem) * 2.2857, 2rem);
+  }
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size: clamp(1rem, 1rem + (1vw - 0.48125rem) * 1.1163, 1.3rem);
+  min-height: 0vw;
+}
+@media screen and (max-width: 770px) {
+  h3 {
+    font-size: clamp(1rem, 1rem + (1vw - 0.2rem) * 1.0667, 1.3rem);
   }
 }
 
@@ -269,15 +288,15 @@ section#menu ul {
     width: 80%;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   section#menu ul {
-    width: 100%;
+    width: 90%;
   }
 }
 section#menu .top-part {
   padding: 40px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   section#menu .top-part {
     padding: 40px 10px;
   }
@@ -323,6 +342,11 @@ section#menu .bottom-part ul {
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
 }
+@media screen and (max-width: 600px) {
+  section#menu .bottom-part ul {
+    grid-template-columns: 1fr;
+  }
+}
 section#menu .bottom-part ul li {
   width: 100%;
   display: grid;
@@ -352,12 +376,342 @@ section#menu .bottom-part ul li .description .plat {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
 }
+@media screen and (max-width: 800px) {
+  section#menu .bottom-part ul li .description .plat {
+    font-size: clamp(0.6rem, 0.6rem + (1vw - 0.375rem) * 1.6, 0.8rem);
+  }
+}
+@media screen and (max-width: 600px) {
+  section#menu .bottom-part ul li .description .plat {
+    font-size: clamp(0.7rem, 0.7rem + (1vw - 0.2rem) * 1.1429, 0.9rem);
+  }
+}
 section#menu .bottom-part ul li .description .ingredients {
   font-size: clamp(0.7rem, 0.7rem + (1vw - 0.5rem) * 1.2, 1rem);
   min-height: 0vw;
   color: #a9a69e;
 }
+@media screen and (max-width: 800px) {
+  section#menu .bottom-part ul li .description .ingredients {
+    font-size: clamp(0.7rem, 0.7rem + (1vw - 0.375rem) * 1.6, 0.9rem);
+  }
+}
+@media screen and (max-width: 600px) {
+  section#menu .bottom-part ul li .description .ingredients {
+    font-size: clamp(0.8rem, 0.8rem + (1vw - 0.2rem) * 1.1429, 1rem);
+  }
+}
 section#menu .bottom-part ul li .price {
   font-family: "Poppins", sans-serif;
   color: #a67245;
+}
+@media screen and (max-width: 600px) {
+  section#menu .bottom-part ul li .price {
+    font-size: clamp(0.8rem, 0.8rem + (1vw - 0.2rem) * 1.1429, 1rem);
+  }
+}
+
+section#reservation .reservation-container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 770px) {
+  section#reservation .reservation-container {
+    display: block;
+  }
+}
+section#reservation .reservation-container .left-part {
+  background: #000000;
+  color: #eeeeee;
+  padding: 15px;
+}
+section#reservation .reservation-container .left-part .container {
+  border: 1px dotted #a67245;
+  padding: 15px;
+}
+section#reservation .reservation-container .left-part .container .icon {
+  margin: 20px 0 0;
+}
+section#reservation .reservation-container .left-part .container p {
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 1.1163, 1rem);
+  min-height: 0vw;
+}
+@media screen and (max-width: 770px) {
+  section#reservation .reservation-container .left-part .container p {
+    font-size: clamp(0.7rem, 0.7rem + (1vw - 0.2rem) * 1.0667, 1rem);
+  }
+}
+section#reservation .reservation-container .right-part {
+  background: #eeeeee;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section#reservation .reservation-container .right-part .form-container {
+  width: 80%;
+  margin: 30px 0;
+}
+section#reservation .reservation-container .right-part .form-container form {
+  width: 100%;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+@media screen and (max-width: 500px) {
+  section#reservation .reservation-container .right-part .form-container form {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+section#reservation .reservation-container .right-part .form-container form input,
+section#reservation .reservation-container .right-part .form-container form select {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #a9a69e;
+  background: transparent;
+  padding: 10px 5px;
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 1.1163, 1rem);
+  min-height: 0vw;
+}
+@media screen and (max-width: 770px) {
+  section#reservation .reservation-container .right-part .form-container form input,
+  section#reservation .reservation-container .right-part .form-container form select {
+    font-size: clamp(0.7rem, 0.7rem + (1vw - 0.2rem) * 1.0667, 1rem);
+  }
+}
+section#reservation .reservation-container .right-part .form-container #submit {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  background: #000000;
+  color: #eeeeee;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 1.1163, 1rem);
+  min-height: 0vw;
+}
+@media screen and (max-width: 770px) {
+  section#reservation .reservation-container .right-part .form-container #submit {
+    font-size: clamp(0.7rem, 0.7rem + (1vw - 0.2rem) * 1.0667, 1rem);
+  }
+}
+section#reservation .reservation-container .right-part .form-container #submit:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (max-width: 650px) {
+  section#blog {
+    display: none;
+  }
+}
+section#blog .blog-container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  margin: 40px auto;
+  padding: 20px 0;
+}
+section#blog .blog-container .container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "hor1 squ" "hor2 squ";
+}
+section#blog .blog-container .container .event1 {
+  grid-area: hor1;
+}
+section#blog .blog-container .container .event1 .img-container {
+  background: url(../img/section4-image1.webp) center/cover;
+}
+section#blog .blog-container .container .event2 {
+  grid-area: hor2;
+}
+section#blog .blog-container .container .event2 .img-container {
+  background: url(../img/section4-image2.webp) center/cover;
+}
+section#blog .blog-container .container .event3 {
+  grid-area: squ;
+}
+section#blog .blog-container .container .horizon {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+section#blog .blog-container .container .horizon .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section#blog .blog-container .container .horizon .img-container .date-container {
+  margin: 50px 0;
+  background: #21201e;
+  color: #eeeeee;
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section#blog .blog-container .container .horizon .img-container .date-container p {
+  font-size: 1rem;
+}
+section#blog .blog-container .container .horizon .img-container .date-container p span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+section#blog .blog-container .container .horizon .article-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #eeeeee;
+  text-align: left;
+}
+section#blog .blog-container .container .horizon .article-container .titre {
+  font-size: clamp(0.9rem, 0.9rem + (1vw - 0.48125rem) * 1.1163, 1.2rem);
+  min-height: 0vw;
+  color: #000000;
+  padding: 0;
+}
+section#blog .blog-container .container .horizon .article-container .description {
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 1.1163, 1rem);
+  min-height: 0vw;
+  color: #a9a69e;
+  padding: 15px 0;
+}
+section#blog .blog-container .container .horizon .article-container .description svg {
+  height: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 1.1163, 1rem);
+  min-height: 0vw;
+  width: auto;
+  fill: #a9a69e;
+}
+section#blog .blog-container .container .horizon .article-container a {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 1.1163, 1rem);
+  min-height: 0vw;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section#blog .blog-container .container .horizon .article-container a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+section#blog .blog-container .container .square {
+  background: url(../img/section4-image3.webp) center/cover;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section#blog .blog-container .container .square .article-container {
+  width: 100%;
+  height: 100%;
+  background: #eeeeee;
+}
+section#blog .blog-container .container .square .article-container .date-container {
+  background: #21201e;
+  color: #eeeeee;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section#blog .blog-container .container .square .article-container .date-container p {
+  font-size: 1rem;
+}
+section#blog .blog-container .container .square .article-container .date-container p span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+section#blog .blog-container .container .square .article-container .titre {
+  font-size: clamp(0.9rem, 0.9rem + (1vw - 0.48125rem) * 1.1163, 1.2rem);
+  min-height: 0vw;
+  color: #000000;
+  padding: 0;
+  margin-top: 50px;
+}
+section#blog .blog-container .container .square .article-container .description {
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 1.1163, 1rem);
+  min-height: 0vw;
+  color: #a9a69e;
+  padding: 15px 0;
+  margin-bottom: 35px;
+}
+section#blog .blog-container .container .square .article-container .description svg {
+  height: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 1.1163, 1rem);
+  min-height: 0vw;
+  width: auto;
+  fill: #a9a69e;
+}
+section#blog .blog-container .container .square .article-container a {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 1.1163, 1rem);
+  min-height: 0vw;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section#blog .blog-container .container .square .article-container a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }/*# sourceMappingURL=index.css.map */
