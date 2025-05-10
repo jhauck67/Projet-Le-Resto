@@ -1,53 +1,25 @@
-.shop {
+section#shop {
   background: $white;
-  width: 100%;
-  .shop-container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    @media screen and (max-width: 700px) {
-      display: block;
-    }
-    div {
-      padding: 15px;
-      .shop-container-left {
-        width: 100%;
-        border: 1px dotted $gold;
-        text-align: center;
-        .cursive {
-          padding: 0;
-        }
-        .icon-container {
-          margin: 10px 0;
-        }
-        .avatar-container {
-          .avatar img {
-            border-radius: 25px;
-          }
-          .nom {
-            font-weight: bold;
-          }
-          .titre {
-            text-transform: uppercase;
-            font-family: $light;
-            color: $grey2;
-          }
-        }
-      }
-    }
-    .shop-container-right {
-      width: 100%;
-      height: 100%;
-      background: url(../img/section1-image.webp) center/cover;
-      @media screen and (max-width: 700px) {
-        display: none;
-      }
+  display: grid;
+  @media screen and (max-width: 670px) {
+    display: block;
+  }
+
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  /* ----------------------------- Text container ----------------------------- */
+  .left-part {
+    padding: 15px;
+    .text-container {
+      border: 1px dotted $gold;
+      padding: 20px 0;
     }
   }
-}
-//Police responsive
-.titre {
-  font-size: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.5455)), 0.8rem);
+  /* ----------------------------- Image container ---------------------------- */
+  .img-container {
+    background: url(../img/section1-image.webp) center/cover;
+    @media screen and (max-width: 670px) {
+      display: none;
+    }
+  }
 }

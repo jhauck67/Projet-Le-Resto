@@ -1,75 +1,21 @@
 nav {
-  max-width: 1200px;
-  width: 80%;
-  height: 50px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  #logo {
-    font-family: $cursive;
-    font-size: 2.5rem;
-    color: $white;
-    padding: 0 10px;
-  }
-  .nav-middle {
+  width: 100%;
+  padding: 10px;
+  @include alignChildren(space-between);
+  /* --------------------------------- NAVBAR --------------------------------- */
+  .navbar {
     width: 70%;
-    height: 100%;
-    @media screen and (max-width: 800px) {
+    li a {
+      font-family: $medium;
+      color: $white;
+      text-transform: uppercase;
+      //*Fluid Responsive font-size
+      font-size: clamp(11.2px, calc(0.7rem + ((1vw - 7.7px) * 0.7442)), 14.4px);
+      min-height: 0vw;
+    }
+    //*Tablette et mobile :
+    @media screen and (max-width: 770px) {
       display: none;
     }
-    ul {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      li {
-        padding: 0 15px;
-        cursor: pointer;
-        &:hover {
-          transform: scale(1.1);
-        }
-        a {
-          color: $white;
-          font-family: $light;
-          text-transform: uppercase;
-        }
-      }
-    }
   }
-  .nav-right {
-    height: 100%;
-    ul {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      li {
-        height: 100%;
-        padding: 0 15px;
-        @include centerChild;
-        cursor: pointer;
-        &:hover {
-          transform: scale(1.2);
-        }
-        a {
-          svg {
-            fill: $white;
-          }
-        }
-      }
-    }
-  }
-}
-
-// Règles polices responsives
-a {
-  font-size: clamp(0.7rem, calc(0.7rem + ((1vw - 0.5rem) * 1.2)), 1rem);
-  min-height: 0vw;
-}
-svg {
-  height: clamp(12px, calc(0.75rem + ((1vw - 8px) * 1)), 16px);
-  width: auto;
-  min-height: 0vw;
 }
