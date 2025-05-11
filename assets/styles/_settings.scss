@@ -26,7 +26,8 @@ $light: "Roboto", sans-serif;
 $medium: "Poppins", sans-serif;
 $white: #eeeeee;
 $black: #000000;
-$gold: #8b5f3a;
+$gold-1: #be8d64;
+$gold-2: #8b5f3a;
 $grey1: #21201e;
 $grey2: #656463;
 
@@ -88,7 +89,7 @@ p {
 }
 .gold {
   text-transform: uppercase;
-  color: $gold;
+  color: $gold-1;
   padding: 20px 15px;
 }
 
@@ -98,9 +99,15 @@ p {
 .cursive {
   font-family: $cursive;
   text-transform: none;
-  color: $gold;
+  color: $gold-1;
   font-weight: 300;
   letter-spacing: normal;
+}
+.black {
+  color: $gold-1;
+}
+.white {
+  color: $gold-2;
 }
 
 h1 {

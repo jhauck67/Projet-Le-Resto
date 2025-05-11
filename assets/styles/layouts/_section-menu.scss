@@ -125,7 +125,7 @@ section#menu {
         }
         .price {
           font-family: $medium;
-          color: $gold;
+          color: $gold-2;
           @media screen and (max-width: 600px) {
             font-size: clamp(
               0.8rem,
